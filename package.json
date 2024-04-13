@@ -1,4 +1,8 @@
 {
+
+  "publishConfig": {
+    "registry": "http://192.168.33.10:8081/repository/angular/"
+},
   "name": "firstapp",
   "version": "0.0.0",
   "scripts": {
@@ -6,7 +10,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "npm publish --registry http://192.168.33.10:8081/repository/angular/"
+
   },
   "private": true,
   "dependencies": {

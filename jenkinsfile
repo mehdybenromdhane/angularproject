@@ -30,6 +30,15 @@ stage('Build application') {
         }
       }
     }
+
+    stage('Deploy nexus ') { 
+      steps{
+        
+        script {
+         sh('npm run deploy ')
+        }
+      }
+    }
   } 
 
 }
