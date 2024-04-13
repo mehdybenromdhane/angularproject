@@ -14,7 +14,7 @@
     "deploy": "npm publish --registry http://192.168.33.10:8081/repository/angular/"
 
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^17.3.0",
     "@angular/common": "^17.3.0",
