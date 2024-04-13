@@ -1,0 +1,36 @@
+
+pipeline{
+  agent any
+
+  environment {
+        registryCredentials = "nexus"
+        registry = "192.168.33.10:8083"
+    }
+   
+  stages {
+
+  stage('Install dependencies') {
+      steps{
+        
+        script {
+         sh('npm install')
+        }
+      }
+    }
+
+
+
+ 
+
+stage('Build application') {
+      steps{
+        
+        script {
+         sh('ng build')
+        }
+      }
+    }
+  } 
+
+}
+
